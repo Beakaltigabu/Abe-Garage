@@ -1,0 +1,106 @@
+.pageWrapper {
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.backButton:hover {
+  color: #d70f0c;
+}
+
+.pageTitle {
+  color: #081e5b;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.step.active {
+  color: #d70f0c;
+}
+
+.step.completed {
+  color: #22c55e;
+}
+
+.stepNumber {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.step.active .stepNumber {
+  background: #d70f0c;
+  color: white;
+}
+
+.step.completed .stepNumber {
+  background: #22c55e;
+  color: white;
+}
+
+.mainContent {
+  display: grid;
+  gap: 2rem;
+}
+
+.customerSection {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.vehicleSection {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .pageWrapper {
+    padding: 1rem;
+  }
+
+  .stepIndicator {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,304 @@
+.topcontainer {
+  /* Add any global container styles here if needed */
+}
+
+.aboutSection {
+  padding: 10px 0; /* Vertical padding for spacing */
+  background-color: white; /* Background color */
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+/* Flex container for row1 */
+.row1 {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute items evenly with space between them */
+}
+
+/* Styles for the left column in the row */
+.colLeft {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: space-between; /* Space items evenly */
+  width: 50%; /* Half width of the parent container */
+  position: relative; /* Position relative for absolute positioning of child elements */
+
+}
+
+/* Container for images with flex layout */
+.imageBox {
+  display: flex; /* Flexbox layout */
+}
+
+/* Styles for images inside imageBox */
+.imageBox img {
+  width: 45%; /* Width of images */
+  max-height: 400px; /* Maximum height for images */
+  object-fit: cover; /* Cover the container with image, cropping if necessary */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Styles specifically for the first image */
+.image1 {
+  padding-right: 5px; /* Space between the first and second image */
+  width: 45%; /* Width of the first image */
+}
+
+/* Styles for the experience badge */
+.yearExperience {
+  position: absolute; /* Positioned absolutely within .colLeft */
+  bottom: -40px; /* Positioned below the bottom of the parent */
+  left: 85%; /* Positioned towards the right */
+  top: 65%; /* Positioned from the top */
+  transform: translateX(-50%); /* Center the badge horizontally */
+  background-color: whitesmoke; /* Background color */
+  padding: 15px; /* Padding inside the badge */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Center text horizontally */
+  font-size: 20px; /* Font size for the badge */
+  color: darkorange; /* Text color */
+  font-weight: bold; /* Bold text */
+  padding-top: 5px; /* Padding on top */
+}
+
+/* Styles for the strong tag inside yearExperience */
+.yearExperience strong {
+  font-size: 80px; /* Larger font size for the strong element */
+}
+
+/* Adjustments for the right column */
+.colRight {
+  margin-left: 20px; /* Margin on the left */
+  width: 45%; /* Width of the right column */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Title styles in the About section */
+.secTitle3 h4 {
+  font-size: 22px; /* Font size */
+  color: black; /* Text color */
+  padding: 0; /* Remove padding */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Title styles in the About section */
+.secTitle3 h2 {
+  font-size: 30px; /* Font size */
+  color: black; /* Text color */
+  padding: 0; /* Remove padding */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Styles for text paragraphs */
+.text p {
+  font-size: 18px; /* Font size */
+  color: black; /* Text color */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below each paragraph */
+}
+
+/* Styles for link button */
+.linkBtn .themeBtn {
+  display: inline-block; /* Inline block layout */
+  padding: 15px 30px; /* Padding inside the button */
+  background-color: darkorange; /* Background color */
+  color: #fff; /* Text color */
+ 
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+font-weight: bold;
+font-size: 20px;
+}
+
+/* Hover effect for link button */
+.linkBtn .themeBtn:hover {
+  background-color: darkorange; /* Darker background color on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Spacing for icon inside themeBtn */
+.themeBtn i {
+  margin-left: 10px; /* Space between icon and text */
+}
+
+.servicesSection {
+  padding: 60px 0; /* Adds vertical padding of 60px on top and bottom */
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  ); /* Sets background color */
+}
+
+.autoContainer {
+  max-width: 1200px; /* Sets maximum width for the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 15px; /* Adds horizontal padding of 15px */
+}
+
+.secTitle {
+  margin-bottom: 40px; /* Adds space below the section title */
+}
+
+.secTitle h2 {
+  font-size: 36px; /* Sets font size for the section title */
+  font-weight: 700; /* Makes the section title bold */
+  color: #0d1b2a; /* Sets color for the section title */
+  margin-bottom: 15px; /* Adds space below the section title */
+}
+
+.secTitle .text {
+  font-size: 16px; /* Sets font size for the section text */
+  color: black; /* Sets text color */
+  line-height: 1.8; /* Sets line height for text */
+}
+
+.header {
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  margin-bottom: 15px; /* Adds space below the header */
+}
+
+.greenLine {
+  width: 2cm; /* Sets width of the darkorange line */
+  height: 2.5px; /* Sets height of the darkorange line */
+  background-color: darkorange; /* Sets color of the darkorange line */
+  margin-top: 100px; /* Adds top margin of 100px */
+  margin-left: 10px; /* Adds left margin of 10px */
+}
+
+.row {
+  display: flex; /* Uses flexbox layout */
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line */
+  justify-content: space-between; /* Distributes items with space between them */
+}
+
+.serviceBlockOne {
+  width: 30%; /* Sets width of each service block */
+  margin-bottom: 30px; 
+}
+
+.innerBox {
+  background-color: #fff; 
+  padding: 30px; 
+  position: relative; 
+  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  border-bottom: darkorange; 
+  border-bottom: 4px solid darkorange; 
+}
+
+.innerBox:hover {
+  border-color: #0d1b2a; /* Changes border color on hover */
+  transform: scale(1.05); /* Slightly enlarges the box on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+}
+
+.innerBox h5 {
+  font-size: 14px; /* Sets font size for the subtitle */
+  color:dark; /* Sets text color for the subtitle */
+  margin-bottom: 10px; /* Adds space below the subtitle */
+  margin-top: 5px;
+  text-transform: uppercase; /* Transforms text to uppercase */
+}
+
+.innerBox h2 {
+  font-size: 24px; /* Sets font size for the main title */
+  color: #0d1b2a; /* Sets color for the main title */
+  margin-top: -60px;
+  margin-bottom: 30px; /* Adds space below the main title */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.innerBox .readMore {
+  font-size: 14px; /* Sets font size for the "Read More" link */
+  color: darkorange; /* Sets color for the "Read More" link */
+  text-transform: uppercase; /* Transforms text to uppercase */
+  display: inline-block; /* Displays link as inline-block */
+  margin-bottom: 20px; /* Adds space below the "Read More" link */
+  margin-top: 20px;
+  margin-right: 190px;
+}
+
+.innerBox .readMore:hover {
+  text-decoration: underline; /* Underlines text on hover */
+  color: #0d1b2a; /* Changes text color on hover */
+}
+
+.innerBox .icon {
+  font-size: 40px; /* Sets font size for the icon */
+  color: darkorange; /* Sets icon color */
+  position: absolute; /* Positions the icon absolutely within the parent */
+  bottom: 15px; /* Positions the icon 15px from the bottom */
+  right: 15px; /* Positions the icon 15px from the right */
+}
+
+/* Styles for section titles in the Why Choose Us section */
+.secTitle1 h2 {
+  font-size: 36px; /* Font size */
+  color: #222; /* Text color */
+}
+
+.autoContainer2 {
+  background-color: whitesmoke;
+ font-family: 'Times New Roman', Times, serif;
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  padding-right: 80px;
+}
+
+.innerContainer2 {
+  color: black; /* Text color */
+  padding-left: 150px; /* Padding on the left */
+  margin-right: 10px; /* Margin on the right */
+  max-width: 50%; /* Maximum width */
+}
+
+.innerContainer2 h2 {
+  font-size: 36px; /* Font size */
+}
+
+.innerContainer2 p {
+  font-size: 18px; /* Font size */
+  color: black;
+}
+
+/* Container for tire image */
+.tireimage {
+  width: 100%; /* Full width */
+  padding-right: 60px;
+}
+
+/* Styles for images inside tireimage */
+.tireimage img {
+  width: 100%; /* Full width */
+  max-height: 400px; /* Maximum height */
+  object-fit: cover; /* Cover the container with image */
+  border-radius: 8px; /* Rounded corners */
+
+}
+
+/* Responsive design for service blocks on smaller screens */
+@media (max-width: 768px) {
+  .serviceBlockOne {
+    width: 45%; /* Adjust width for medium screens */
+  }
+}
+
+/* Responsive design for service blocks on very small screens */
+@media (max-width: 480px) {
+  .serviceBlockOne {
+    width: 100%; /* Full width on small screens */
+  }
+}

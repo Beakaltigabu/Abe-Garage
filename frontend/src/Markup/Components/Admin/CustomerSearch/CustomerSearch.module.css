@@ -1,0 +1,391 @@
+.pageWrapper {
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.pageTitle {
+  color: #081e5b;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.step.active {
+  color: #d70f0c;
+}
+
+.stepNumber {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.step.active .stepNumber {
+  background: #d70f0c;
+  color: white;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.searchPanel {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.searchControls {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.searchInputWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.875rem 2.5rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #081e5b;
+  box-shadow: 0 0 0 3px rgba(8, 30, 91, 0.1);
+  outline: none;
+}
+
+.clearButton {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+.clearButton:hover {
+  background: #f1f5f9;
+}
+
+.addCustomerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  background: #081e5b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px; /* Increased from 150px */
+  flex-shrink: 0;
+}
+
+.addCustomerButton:hover {
+  background: #0f2d6b;
+}
+
+.recentSearches {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.recentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recentTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.clearRecentButton {
+  background: none;
+  border: none;
+  color: #d70f0c;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.clearRecentButton:hover {
+  background: #fee2e2;
+}
+
+.recentList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.75rem;
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border: none;
+  border-radius: 6px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.recentItem:hover {
+  background: #f1f5f9;
+  color: #081e5b;
+}
+
+.resultsPanel {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  position: relative;
+  min-height: 400px;
+}
+
+.resultsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  padding-bottom: 80px;
+}
+
+.customerItem {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.customerItem:hover {
+  border-color: #081e5b;
+  transform: translateX(5px);
+}
+
+.customerItem.selected {
+  border-color: #d70f0c;
+  background: #fff5f5;
+}
+
+.customerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customerMain {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.customerInitials {
+  width: 48px;
+  height: 48px;
+  background: #081e5b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.customerDetails h3 {
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.contactDetails span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selectArrow {
+  color: #d70f0c;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.customerItem:hover .selectArrow,
+.customerItem.selected .selectArrow {
+  opacity: 1;
+}
+
+.selectedCustomerBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.selectedInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selectedInfo span {
+  color: #64748b;
+}
+
+.selectedInfo strong {
+  color: #081e5b;
+}
+
+.proceedButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #d70f0c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.proceedButton:hover {
+  background: #b50d0a;
+  transform: translateY(-1px);
+}
+
+.loadingState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .pageWrapper {
+    padding: 1rem;
+  }
+
+  .searchControls {
+    flex-direction: column;
+  }
+
+  .addCustomerButton {
+    width: 100%;
+  }
+
+  .resultsList {
+    grid-template-columns: 1fr;
+  }
+
+  .stepIndicator {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .selectedCustomerBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .customerMain {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .selectedCustomerBar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

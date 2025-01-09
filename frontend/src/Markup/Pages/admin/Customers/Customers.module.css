@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+ background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.contentContainer {
+  flex: 1;
+  padding: 0px 40px;
+  margin-top: -40px;
+  background-color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: whitesmoke;
+}
+
+.table th, .table td {
+  padding: 16px 15px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 25px;
+}
+
+.editIcon, .viewIcon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: darkorange;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 2.2px solid darkorange;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 250px;
+  align-self: flex-end;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: darkorange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.deleteIcon {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: red;
+  margin-top: 4px;
+}
+
+.deleteIcon:hover {
+  color: darkred;
+}
+
+
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+
+  .editIcon, .viewIcon {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,297 @@
+.pageContainer {
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.titleSection {
+  margin-bottom: 1.5rem;
+}
+
+.titleSection h1 {
+  color: #081e5b;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.titleSection p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.controlsSection {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  margin-left: auto; /* This pushes the section to the right */
+}
+
+.searchWrapper {
+  flex: 3;
+}
+
+.filterWrapper {
+  flex: 1;
+}
+
+
+
+.searchInput, .filterSelect {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  color: #1e293b;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.searchIcon, .filterIcon {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background: #f1f5f9;
+  padding: 1rem;
+  text-align: left;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.tableRow:hover {
+  background: #f8fafc;
+}
+
+.orderId {
+  font-weight: 600;
+  color: #081e5b;
+}
+
+.customerCell, .vehicleCell {
+  min-width: 200px;
+}
+
+.customerName, .vehicleName {
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.customerDetails, .vehicleDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #f1f5f9;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.statusCompleted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.statusInProgress {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.statusReceived {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.actionsCell {
+  width: 150px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.viewButton:hover { color: #081e5b; background: #f1f5f9; }
+.editButton:hover { color: #2563eb; background: #eff6ff; }
+.deleteButton:hover { color: #dc2626; background: #fef2f2; }
+
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.paginationButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  color: #1e293b;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginationButton:hover:not(.disabled) {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.paginationButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modalContent h3 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.modalContent p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modalCancelButton, .modalDeleteButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modalCancelButton {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.modalDeleteButton {
+  background: #dc2626;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .controlsSection {
+    flex-direction: column;
+  }
+
+  .tableContainer {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 1rem;
+  }
+
+  .titleSection h1 {
+    font-size: 1.5rem;
+  }
+}

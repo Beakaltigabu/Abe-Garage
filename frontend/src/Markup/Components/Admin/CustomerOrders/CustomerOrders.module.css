@@ -1,0 +1,40 @@
+.container {
+    padding: 20px;
+  }
+
+  .title {
+    color: #081e5b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .titleUnderline {
+    color: #d70f0c;
+  }
+
+  .orderTable {
+    margin-top: 20px;
+  }
+
+  .actionIcon {
+    cursor: pointer;
+    margin-right: 10px;
+    color: #081e5b;
+  }
+
+  .actionIcon:hover {
+    color: #d70f0c;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .noOrders {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 50px;
+  }

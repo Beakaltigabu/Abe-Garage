@@ -1,0 +1,266 @@
+.pageWrapper {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.headerSection {
+  background: white;
+  padding: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.headerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.backButton:hover {
+  color: #081e5b;
+}
+
+.orderMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #081e5b;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.mainContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.primaryInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d70f0c;
+  font-size: 1.5rem;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardContent h3 {
+  color: #081e5b;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.customerName, .vehicleMain {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.contactInfo, .vehicleDetails {
+  display: grid;
+  gap: 0.5rem;
+  color: #64748b;
+}
+
+.contactInfo div, .vehicleDetails div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.servicesSection {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.servicesList {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #d70f0c;
+}
+
+.serviceInfo h4 {
+  color: #081e5b;
+  margin-bottom: 0.25rem;
+}
+
+.addServiceSection {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.orderMetaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.metaCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metaCard h3 {
+  color: #081e5b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timelineInfo, .orderInfo, .notesInfo {
+  display: grid;
+  gap: 1rem;
+}
+
+.timelineItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.timelineItem span {
+  color: #64748b;
+}
+
+.timelineItem strong {
+  color: #081e5b;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.formActions button {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+}
+
+/* Form Styling */
+.metaCard :global(.form-control),
+.metaCard :global(.form-select) {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.metaCard :global(.form-control:focus),
+.metaCard :global(.form-select:focus) {
+  border-color: #d70f0c;
+  box-shadow: 0 0 0 2px rgba(215, 15, 12, 0.1);
+}
+
+.metaCard :global(.form-label) {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .orderMetaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .primaryInfo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .orderMetaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mainContent {
+    padding: 0 1rem 1rem;
+  }
+
+  .headerSection {
+    padding: 1rem;
+  }
+
+  .addServiceSection {
+    flex-direction: column;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .formActions button {
+    width: 100%;
+  }
+}
+

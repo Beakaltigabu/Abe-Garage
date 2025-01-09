@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.profileContainer {
+  width: 100%;
+  max-width: 1200px;   
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.vehiclesSection,
+.ordersSection {
+  margin-top: 2rem;
+  width: 100%;
+}

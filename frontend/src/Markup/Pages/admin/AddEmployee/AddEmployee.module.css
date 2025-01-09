@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.content {
+  flex: 1;
+  padding: 0 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+}

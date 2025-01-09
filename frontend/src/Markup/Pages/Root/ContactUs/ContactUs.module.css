@@ -1,0 +1,127 @@
+.contactUs {
+  font-family: Arial, sans-serif; /* Set the base font family for the Contact Us page */
+  margin-bottom: 20px; /* Add margin at the bottom of the Contact Us section */
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.heroSection {
+  background: url('../../../../assets/images/contactus.jpg') no-repeat center center/cover; /* Set a background image with no-repeat, center it, and cover the section */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align text */
+  padding: 50px 20px; /* Add padding of 50px top/bottom and 20px left/right */
+}
+
+.heroSection h1 {
+  font-size: 48px; /* Set font size for the heading to 48px */
+  margin-bottom: 10px; /* Add margin below the heading */
+  font-family: 'Times New Roman', Times, serif; /* Set a specific font family for the heading */
+}
+
+.heroSection p {
+  font-size: 21px; /* Set font size for paragraph text to 21px */
+  font-family: 'Times New Roman', Times, serif; /* Set a specific font family for paragraph text */
+  padding: 0 10px; /* Add padding of 10px left/right */
+}
+
+.contactSection {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space between child elements */
+  padding: 50px 20px; /* Add padding of 50px top/bottom and 20px left/right */
+  max-width: 1200px; /* Set maximum width of the section */
+  margin: 0 auto; /* Center the section horizontally */
+  
+}
+
+.mapContainer {
+  flex: 1; /* Allow the map container to grow and take available space */
+  margin-right: 20px; /* Add margin to the right of the map container */
+}
+
+.addressContainer {
+  flex: 1; /* Allow the address container to grow and take available space */
+}
+
+.addressContainer h2 {
+  font-size: 32px; /* Set font size for subheading to 32px */
+  margin-bottom: 20px; /* Add margin below the subheading */
+}
+
+.addressContainer p {
+  font-size: 16px; /* Set font size for paragraph text to 16px */
+  color:  black; /* Set text color to a light gray */
+  margin-bottom: 30px; /* Add margin below the paragraph */
+}
+
+.contactDetails {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  gap: 20px; /* Add space between child elements */
+}
+
+.contactDetail {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically align items in the center */
+  font-size: 18px; /* Set font size for contact details to 18px */
+}
+
+.contactDetail i {
+  font-size: 24px; /* Set font size for icons to 24px */
+  color: #007bff; /* Set color of icons to a blue shade */
+  margin-right: 10px; /* Add margin to the right of the icon */
+}
+
+.contactDetail span {
+  font-weight: bold; /* Make the span text bold */
+  margin-right: 5px; /* Add margin to the right of the span */
+}
+
+.callToAction {
+  background-color: #1A1A3B; /* Set background color to a dark blue shade */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align text */
+  padding: 0px 100px; /* Add padding of 100px left/right */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space between child elements */
+  align-items: center; /* Vertically align items in the center */
+  max-width: 900px; /* Set maximum width of the section */
+  margin: 20px auto; /* Add margin of 20px top/bottom and center horizontally */
+  padding-bottom: 60px; /* Add padding of 60px at the bottom */
+}
+
+.contactusText h2 {
+  font-size: 28px; /* Set font size for the heading to 28px */
+  margin-bottom: 5px; /* Add margin below the heading */
+}
+
+.contactusText p {
+  font-size: 16px; /* Set font size for paragraph text to 16px */
+  margin: 0; /* Remove margin from the paragraph */
+}
+
+.contactusButton h2 {
+  font-size: 36px; /* Set font size for the heading to 36px */
+  margin: 0; /* Remove margin from the heading */
+  margin-bottom: 20px !important; /* Add margin below the heading and override any other margin settings */
+}
+
+.contactButton {
+  background-color: darkorange; /* Set background color to darkorange */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border from the button */
+  padding: 15px 20px; /* Add padding of 15px top/bottom and 20px left/right */
+  font-size: 16px; /* Set font size for button text to 16px */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 7px; /* Add rounded corners with a radius of 7px */
+  margin-left: 80px; /* Add margin to the left of the button */
+  margin-top: 10px; /* Add margin to the top of the button */
+  font-weight: bold; /* Make the button text bold */
+}

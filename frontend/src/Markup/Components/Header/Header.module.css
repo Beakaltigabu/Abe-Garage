@@ -1,0 +1,369 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.topHeader {
+  background: linear-gradient(to right, #081e5b, #0a2875);
+  overflow: hidden;
+}
+
+.topHeaderContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.welcomeMessage {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  opacity: 0.95;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.contactInfo span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.contactInfo span:hover {
+  opacity: 1;
+}
+
+.mainHeader {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  color: #081e5b;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #d70f0c;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.navLink:hover::after {
+  width: 70%;
+}
+
+.navLink:hover {
+  color: #d70f0c;
+  background: rgba(215, 15, 12, 0.05);
+  transform: translateY(-1px);
+}
+
+.adminLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #d70f0c 0%, #ff4b47 100%);
+  color: white !important;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(215, 15, 12, 0.2);
+  text-decoration: none;
+}
+
+.adminLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(215, 15, 12, 0.3);
+  background: linear-gradient(135deg, #ff4b47 0%, #d70f0c 100%);
+}
+
+.adminLink svg {
+  font-size: 1.1rem;
+}
+
+.active {
+  color: #d70f0c;
+  background: rgba(215, 15, 12, 0.08);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notificationBell {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #081e5b;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: rgba(8, 30, 91, 0.05);
+}
+
+.notificationBell:hover {
+  background: rgba(8, 30, 91, 0.1);
+  transform: translateY(-1px);
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #d70f0c;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(215, 15, 12, 0.3);
+}
+
+.userMenuContainer {
+  position: relative;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(8, 30, 91, 0.05);
+}
+
+.userProfile:hover {
+  background: rgba(8, 30, 91, 0.1);
+  transform: translateY(-1px);
+}
+
+.userIcon {
+  font-size: 1.5rem;
+  color: #081e5b;
+}
+
+.userName {
+  font-weight: 500;
+  color: #081e5b;
+}
+
+.userDropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  min-width: 220px;
+  border: 1px solid rgba(8, 30, 91, 0.1);
+  z-index: 1000;
+}
+
+.userDropdown a,
+.userDropdown button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  color: #081e5b;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.userDropdown a:hover,
+.userDropdown button:hover {
+  background: rgba(8, 30, 91, 0.05);
+  color: #d70f0c;
+  transform: translateX(5px);
+}
+
+.loginButton {
+  background: #d70f0c;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(215, 15, 12, 0.2);
+}
+
+.loginButton:hover {
+  background: #b50d0a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(215, 15, 12, 0.3);
+}
+
+.mobileMenuButton {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mainHeader {
+    padding: 1rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topHeaderContent {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+    background: none;
+    border: none;
+    color: #081e5b;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    border-top: 1px solid rgba(8, 30, 91, 0.1);
+  }
+
+  .mobileNavLink {
+    padding: 1rem;
+    color: #081e5b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .mobileNavLink:hover {
+    background: rgba(8, 30, 91, 0.05);
+    color: #d70f0c;
+    padding-left: 1.5rem;
+  }
+
+  .adminMobileLink {
+    background: rgba(215, 15, 12, 0.1);
+    color: #d70f0c;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .adminMobileLink:hover {
+    background: rgba(215, 15, 12, 0.15);
+    padding-left: 2rem;
+  }
+
+  .userName {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactInfo {
+    display: none;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .headerActions {
+    gap: 0.8rem;
+  }
+
+  .loginButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .userDropdown {
+    right: -1rem;
+  }
+}

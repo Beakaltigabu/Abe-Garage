@@ -1,0 +1,111 @@
+.adminLayout {
+  display: flex;
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  position: relative;
+  background: #f8f9fc;
+}
+
+.toggleButton {
+  position: fixed;
+  top: calc(var(--header-height) + 1rem);
+  left: calc(var(--sidebar-width) - 20px);
+  width: 40px;
+  height: 40px;
+  background: #081e5b;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggleButton.buttonOpen {
+  left: calc(var(--sidebar-width) - 20px);
+}
+
+.toggleButton:not(.buttonOpen) {
+  left: 1rem;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+}
+
+.mainContent.expanded {
+  margin-left: 0;
+}
+
+@media (max-width: 400px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .toggleButton {
+    top: calc(var(--header-height) + 0.5rem);
+    left: 1rem;
+  }
+
+  .toggleButton.buttonOpen {
+    left: calc(var(--sidebar-width) - 3rem);
+  }
+}
+.adminLayoutWrapper {
+  display: flex;
+  min-height: var(--main-content-min-height);
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+  position: relative;
+  background: #f8f9fc;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  min-height: var(--main-content-min-height);
+  width: calc(100% - var(--sidebar-width));
+}
+
+.mainContent.expanded {
+  margin-left: 0;
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .mainContent {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.adminLayoutWrapper {
+  display: flex;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding-top: var(--header-height);
+  position: relative;
+  background: #f8f9fc;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  position: relative;
+}
+
+.mainContent.expanded {
+  margin-left: 0;
+}

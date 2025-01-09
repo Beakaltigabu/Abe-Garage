@@ -1,0 +1,198 @@
+.services {
+  font-family: Arial, sans-serif; /* Sets the font for the services section */
+  margin-bottom: 20px; /* Adds space below the services section */
+}
+
+.heroSection {
+  background: url('../../../../assets/images/servicebg.jpg') no-repeat center center/cover; /* Sets background image with no-repeat, centered, and cover */
+  color: white; /* Sets text color to white */
+  text-align: center; /* Centers text horizontally */
+  padding: 50px 0px; /* Adds vertical padding of 50px on top and bottom */
+  padding-right: 900px; /* Adds right padding of 900px */
+  padding-bottom: 80px; /* Adds bottom padding of 80px */
+}
+
+.heroSection h1 {
+  font-size: 48px; /* Sets font size for main heading */
+  margin-bottom: 10px; /* Adds space below the heading */
+  font-family: 'Times New Roman', Times, serif; /* Sets the font for the heading */
+}
+
+.heroSection p {
+  font-size: 21px; /* Sets font size for the paragraph */
+  font-family: 'Times New Roman', Times, serif; /* Sets the font for the paragraph */
+  padding: 0 10px; /* Adds horizontal padding of 10px */
+}
+
+.servicesSection {
+  padding: 60px 0; /* Adds vertical padding of 60px on top and bottom */
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  ); /* Sets background color */
+}
+
+.autoContainer {
+  max-width: 1200px; /* Sets maximum width for the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 15px; /* Adds horizontal padding of 15px */
+}
+
+.secTitle {
+  margin-bottom: 40px; /* Adds space below the section title */
+}
+
+.secTitle h2 {
+  font-size: 36px; /* Sets font size for the section title */
+  font-weight: 700; /* Makes the section title bold */
+  color: #0d1b2a; /* Sets color for the section title */
+  margin-bottom: 15px; /* Adds space below the section title */
+}
+
+.secTitle .text {
+  font-size: 16px; /* Sets font size for the section text */
+  color: black; /* Sets text color */
+  line-height: 1.8; /* Sets line height for text */
+}
+
+.row {
+  display: flex; /* Uses flexbox layout */
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line */
+  justify-content: space-between; /* Distributes items with space between them */
+}
+
+.serviceBlockOne {
+  width: 30%; /* Sets width of each service block */
+  margin-bottom: 30px; 
+}
+
+.header {
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  margin-bottom: 15px; /* Adds space below the header */
+}
+
+.greenLine {
+  width: 2.5cm; /* Sets width of the darkorange line */
+  height: 2.5px; /* Sets height of the darkorange line */
+  background-color: darkorange; /* Sets color of the darkorange line */
+  margin-top: 100px; /* Adds top margin of 100px */
+  margin-left: 10px; /* Adds left margin of 10px */
+}
+
+.innerBox {
+  background-color: #fff; /* Sets background color to white */
+  padding: 30px; /* Adds padding of 30px inside the box */
+  position: relative; /* Sets position to relative for positioning child elements */
+  transition: all 0.3s ease; /* Smooth transition for all properties over 0.3 seconds */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  border-bottom: darkorange; /* Sets border color of the bottom edge to darkorange */
+  border-bottom: 4px solid darkorange; /* Sets bottom border to a solid darkorange line with 4px thickness */
+}
+
+.innerBox:hover {
+  border-color: #0d1b2a; /* Changes border color on hover */
+  transform: scale(1.05); /* Slightly enlarges the box on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+}
+
+.innerBox .readMore:hover {
+  text-decoration: underline; /* Underlines text on hover */
+  color: #0d1b2a; /* Changes text color on hover */
+}
+
+.innerBox h5 {
+  font-size: 14px; /* Sets font size for the subtitle */
+  color:dark; /* Sets text color for the subtitle */
+  margin-bottom: 10px; /* Adds space below the subtitle */
+  margin-top: 5px;
+  text-transform: uppercase; /* Transforms text to uppercase */
+}
+
+.innerBox h2 {
+  font-size: 24px; /* Sets font size for the main title */
+  color: #0d1b2a; /* Sets color for the main title */
+  margin-top: -60px;
+  margin-bottom: 30px; /* Adds space below the main title */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.innerBox .readMore {
+  font-size: 14px; /* Sets font size for the "Read More" link */
+  color: darkorange; /* Sets color for the "Read More" link */
+  text-transform: uppercase; /* Transforms text to uppercase */
+  display: inline-block; /* Displays link as inline-block */
+  margin-bottom: 20px; /* Adds space below the "Read More" link */
+  margin-top: 20px;
+  margin-right: 190px;
+}
+
+.innerBox .readMore:hover {
+  text-decoration: underline; /* Underlines text on hover */
+}
+
+.innerBox .icon {
+  font-size: 40px; /* Sets font size for the icon */
+  color: darkorange; /* Sets icon color */
+  position: absolute; /* Positions the icon absolutely within the parent */
+  bottom: 15px; /* Positions the icon 15px from the bottom */
+  right: 15px; /* Positions the icon 15px from the right */
+}
+
+.callToAction {
+  background-color: #1A1A3B; /* Set background color to a dark blue shade */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align text */
+  padding: 0px 100px; /* Add padding of 100px left/right */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space between child elements */
+  align-items: center; /* Vertically align items in the center */
+  max-width: 900px; /* Set maximum width of the section */
+  margin: 20px auto; /* Add margin of 20px top/bottom and center horizontally */
+  padding-bottom: 60px; /* Add padding of 60px at the bottom */
+}
+
+.contactusText h2 {
+  font-size: 28px; /* Set font size for the heading to 28px */
+  margin-bottom: 5px; /* Add margin below the heading */
+}
+
+.contactusText p {
+  font-size: 16px; /* Set font size for paragraph text to 16px */
+  margin: 0; /* Remove margin from the paragraph */
+}
+
+.contactusButton h2 {
+  font-size: 36px; /* Set font size for the heading to 36px */
+  margin: 0; /* Remove margin from the heading */
+  margin-bottom: 20px !important; /* Add margin below the heading and override any other margin settings */
+margin-top: 10px;
+}
+
+.contactButton {
+  background-color: darkorange; /* Set background color to darkorange */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border from the button */
+  padding: 15px 20px; /* Add padding of 15px top/bottom and 20px left/right */
+  font-size: 16px; /* Set font size for button text to 16px */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 7px; /* Add rounded corners with a radius of 7px */
+  margin-left: 80px; /* Add margin to the left of the button */
+  margin-top: 10px; /* Add margin to the top of the button */
+  font-weight: bold; /* Make the button text bold */
+}
+@media (max-width: 768px) {
+  .serviceBlockOne {
+    width: 45%; /* Sets width of service blocks to 45% on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceBlockOne {
+    width: 100%; /* Sets width of service blocks to 100% on very small screens */
+  }
+}

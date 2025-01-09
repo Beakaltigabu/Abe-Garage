@@ -1,0 +1,69 @@
+.title {
+  font-size: 1.8rem;
+  color: #081e5b;
+  margin-bottom: 20px;
+}
+
+.titleUnderline {
+  color: orangered;
+}
+
+.searchInput {
+  width: 300px;
+}
+
+.serviceCard {
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.actionButton {
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+.actionIcon {
+  color: #081e5b;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.actionIcon:hover {
+  color: orangered;
+}
+
+@media (max-width: 768px) {
+  .serviceCard {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .serviceCard {
+    font-size: 0.8rem;
+  }
+}
+
+
+.addButton {
+  background-color: #d70f0c;
+  color: white;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.addButton:hover {
+  background-color: #b50d0a;
+}

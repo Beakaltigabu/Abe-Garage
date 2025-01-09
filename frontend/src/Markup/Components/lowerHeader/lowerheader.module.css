@@ -1,0 +1,154 @@
+/* Default for large screens */
+
+.headerUpper {
+  background-color: whitesmoke;
+  padding-top: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 20px;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 280px;
+  height: 70px;
+}
+
+.rightColumn {
+  display: flex;
+  align-items: center;
+}
+
+.mainMenu {
+  margin-right: 20px;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navItem {
+  margin: 0 15px;
+}
+
+.navItem a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navItem a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+.bookButton {
+  padding: 10px 20px;
+  background-color: darkorange;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Medium Screens (Tablets, smaller laptops) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo img {
+    width: 250px;
+    height: 60px;
+  }
+
+  .navItem a {
+    font-size: 15px;
+  }
+}
+
+/* Small Screens (Tablets and smaller devices) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .rightColumn {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .mainMenu {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navItem {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navItem a {
+    font-size: 14px;
+  }
+
+  .bookButton {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Extra Small Screens (Mobile devices) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 40px;
+  }
+
+  .navItem a {
+    font-size: 12px;
+  }
+
+  .bookButton {
+    padding: 8px 16px;
+    width: 100%;
+  }
+}

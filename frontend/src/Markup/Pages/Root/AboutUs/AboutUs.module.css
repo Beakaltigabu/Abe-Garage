@@ -1,0 +1,76 @@
+/* Global styling for the About Us component */
+.aboutus {
+  font-family: Arial, sans-serif;  /* Set the default font for the section */
+  margin-bottom: 20px;  /* Add space below the section */
+  
+}
+
+/* Styling for the hero section at the top of the About Us page */
+.heroSection {
+  background: url('../../../../assets/images/contactus.jpg') no-repeat center center/cover;
+  /* Set a background image with no repeat, centered, and cover the entire section */
+  color: white;  /* Set the text color to white */
+  text-align: center;  /* Center-align the text */
+  padding: 50px 20px;  /* Add padding around the content */
+}
+
+/* Styling for the main heading within the hero section */
+.heroSection h1 {
+  font-size: 48px;  /* Large font size for the heading */
+  margin-bottom: 10px;  /* Space below the heading */
+  font-family: 'Times New Roman', Times, serif;  /* Set a serif font for the heading */
+}
+
+/* Styling for the paragraph within the hero section */
+.heroSection p {
+  font-size: 21px;  /* Medium font size for the paragraph */
+  font-family: 'Times New Roman', Times, serif;  /* Set a serif font for the paragraph */
+  padding: 0 10px;  /* Add padding on the left and right sides */
+}
+
+/* Styling for the call-to-action section at the bottom of the About Us page */
+.callToAction {
+  background-color: #1A1A3B;  /* Dark blue background color */
+  color: white;  /* White text color */
+  text-align: center;  /* Center-align the text */
+  padding: 0px 100px;  /* Add padding on the left and right sides */
+  display: flex;  /* Use flexbox for layout */
+  justify-content: space-between;  /* Distribute space between items */
+  align-items: center;  /* Center items vertically */
+  max-width: 900px;  /* Set a maximum width for the section */
+  margin: 20px auto;  /* Center the section and add vertical margins */
+  padding-bottom: 60px;  /* Add extra padding at the bottom */
+}
+
+/* Styling for the heading inside the contact us text section */
+.contactusText h2 {
+  font-size: 28px;  /* Set the font size for the heading */
+  margin-bottom: 5px;  /* Add a small space below the heading */
+}
+
+/* Styling for the paragraph inside the contact us text section */
+.contactusText p {
+  font-size: 16px;  /* Set the font size for the paragraph */
+  margin: 0;  /* Remove default margin */
+}
+
+/* Styling for the large phone number inside the contact us button section */
+.contactusButton h2 {
+  font-size: 36px;  /* Set the font size for the phone number */
+  margin: 0;  /* Remove default margin */
+  margin-bottom: 20px !important;  /* Force margin below the phone number */
+}
+
+/* Styling for the 'Contact Us' button */
+.contactButton {
+  background-color: darkorange;  /* Set the background color of the button to green */
+  color: white;  /* Set the text color of the button to white */
+  border: none;  /* Remove the border */
+  padding: 15px 20px;  /* Add padding inside the button */
+  font-size: 16px;  /* Set the font size for the button text */
+  cursor: pointer;  /* Change the cursor to a pointer when hovering */
+  border-radius: 7px;  /* Add rounded corners to the button */
+  margin-left: 80px;  /* Add space to the left of the button */
+  margin-top: 10px;  /* Add space above the button */
+  font-weight: bold;  /* Make the button text bold */
+}

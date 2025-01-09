@@ -1,0 +1,148 @@
+/* Default styles for large screens */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.text {
+  background-color: darkorange;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  background-color: #08194A;
+  height: 50px;
+  padding: 0 20px;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.officeHour {
+  font-size: 16px;
+  color: white;
+  padding-right: 20px;
+}
+
+.phoneNumber, .phoneNumber1 {
+  color: white;
+}
+
+.phoneNumber1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 992px) {
+  .container {
+    height: 55px;
+  }
+
+  .text {
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 55px;
+  }
+
+  .rightSection {
+    height: 55px;
+    padding: 0 40px;
+  }
+
+  .officeHour {
+    font-size: 17px;
+    padding-right: 350px;
+  }
+
+  .phoneNumber1 {
+    font-size: 22px;
+    padding-left: 100px;
+    padding-top: 10px;
+  }
+}
+
+/* Medium Screens (Tablets, smaller laptops) */
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  .text {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: space-between;
+  }
+
+  .officeHour {
+    font-size: 15px;
+    padding-right: 0;
+  }
+
+  .phoneNumber1 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+}
+
+/* Small Screens (Tablets and smaller devices) */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .text {
+    font-size: 14px;
+    padding: 8px 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .officeHour {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+
+  .phoneNumber1 {
+    font-size: 16px;
+    padding-left: 0;
+    text-align: center;
+  }
+}

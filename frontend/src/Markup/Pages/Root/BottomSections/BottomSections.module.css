@@ -1,0 +1,362 @@
+
+/* Styles for the Why Choose Us section */
+.whyChooseUs {
+  padding: 60px 0; /* Vertical padding */
+ 
+background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+/* Flex container for row3 */
+.row3 {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Styles for columns in row3 */
+.colLg6 {
+  width: 48%; /* Width of the column */
+}
+
+/* Flex container for section titles */
+.secTitle1 {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Distribute items with space between */
+  max-width: 70%; /* Maximum width */
+}
+
+/* Styles for section titles in secTitle1 */
+.secTitle1 h2 {
+  border-bottom: 3px solid darkorange; /* darkorange underline */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Distribute items with space between */
+  flex-direction: column; /* Arrange items vertically */
+}
+
+/* Text styles in the Why Choose Us section */
+.text {
+  font-size: 16px; /* Font size */
+  color: black; /* Text color */
+  margin-bottom: 30px; /* Space below text */
+  line-height: 1.8; /* Line height for readability */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Container for icon boxes */
+.iconBoxes {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+}
+
+/* Styles for each icon box */
+.iconBox {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styles for icons inside iconBox */
+.iconBox .icon {
+  font-size: 30px; /* Font size */
+  color: darkorange; /* Icon color */
+  margin-right: 15px; /* Space between icon and text */
+}
+
+/* Styles for headings inside iconBox */
+.iconBox h4 {
+  font-size: 18px; /* Font size */
+  color: black; /* Text color */
+}
+
+/* Styles for additional services list */
+.additionalServices {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+
+}
+
+/* Styles for list of additional services */
+.list {
+  list-style: none; /* Remove default list style */
+  padding-left: 0; /* Remove padding */
+}
+
+/* Styles for list items */
+.list li {
+  font-size: 18px; /* Font size */
+  color: black; /* Text color */
+  margin-bottom: 10px; /* Space below each list item */
+  position: relative; /* Position relative for pseudo-elements */
+  padding-left: 25px; /* Space on the left */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Styles for checkmark before each list item */
+.list li::before {
+  content: '✓'; /* Checkmark symbol */
+  position: absolute; /* Positioned absolutely within list item */
+  left: 0; /* Position to the left */
+  color: darkorange; /* Checkmark color */
+  font-weight: bold; /* Bold checkmark */
+  font-size: 25px; /* Checkmark size */
+}
+
+/* Container for image in the Why Choose Us section */
+.imageBox1 {
+  padding-top: 20px; /* Padding on top */
+  padding-right: 30px; /* Padding on the right */
+  width: 30%; /* Width of the container */
+  padding-left: 100px; /* Padding on the left */
+}
+
+/* Styles for images inside imageBox1 */
+.imageBox1 img {
+  width: 100%; /* Full width */
+  max-height: 380px; /* Maximum height */
+}
+
+/* Styles for the video section */
+.videoSection {
+  background: url("../../../../assets/images/servicebg.jpg") no-repeat; /* Background image */
+  padding: 25px 0; /* Vertical padding */
+  width: 100%; /* Full width */
+}
+
+/* Flex container for video box */
+.videoBox {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  margin-top: 30px; /* Margin on top */
+  margin-left: 70px; /* Margin on the left */
+}
+
+/* Container for text in the video section */
+.autoContainer, .lasttext {
+  color: white; /* Text color */
+}
+
+/* Styles for container with video section text */
+.autoContainer3, .lasttext {
+  color: white; /* Text color */
+  font-size: 20px; /* Font size */
+}
+
+/* Padding for headings in autoContainer3 */
+.autoContainer3 h5, h2 {
+  padding-top: 60px; /* Padding on top */
+}
+
+/* General styles for service section */
+.services {
+  font-family: Arial, sans-serif; /* Font family */
+  margin-bottom: 20px; /* Space below section */
+}
+
+/* Styles for services section */
+.servicesSection {
+  padding: 60px 0; /* Vertical padding */
+  background-color: white; /* Background color */
+background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+/* Container for sections */
+.autoContainer {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 15px; /* Horizontal padding */
+}
+
+/* Container for the video section */
+.autoContainer3 {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 15px; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Distribute items with space between */
+  height: 200px; /* Fixed height */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Styles for section titles */
+.secTitle h2 {
+  font-size: 36px; /* Font size */
+  font-weight: 700; /* Bold font */
+  color: #0d1b2a; /* Text color */
+}
+
+/* Text styles in secTitle */
+.secTitle .text {
+  font-size: 16px; /* Font size */
+  color: black; /* Text color */
+  line-height: 1.8; /* Line height for readability */
+}
+/* Styles for section titles in the Why Choose Us section */
+.secTitle1 h2 {
+  font-size: 36px; /* Font size */
+  color: #222; /* Text color */
+}
+/* Flex container for general rows */
+.row {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: space-between; /* Distribute items with space between */
+}
+
+/* Styles for each service block */
+.serviceBlockOne {
+  width: 30%; /* Width of each block */
+  margin-bottom: 30px; /* Space below each block */
+  background-color: whitesmoke; /* Background color */
+}
+
+/* Flex container for header */
+.header {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Margin below header */
+}
+
+/* darkorange line decoration */
+.greenLine {
+  width: 1.5cm; /* Width of the line */
+  height: 2.5px; /* Height of the line */
+  background-color: darkorange; /* Line color */
+  margin-top: 105px; /* Margin on top */
+  margin-right: 140px; /* Margin on the right */
+}
+
+.innerBox {
+  background-color: whitesmoke; 
+  padding: 10px;
+  text-align: center; 
+  position: relative; 
+  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  border-bottom: 4px solid darkorange; 
+}
+
+/* Hover effect for innerBox */
+.innerBox:hover {
+  border-color: darkorange; /* Darker border color on hover */
+  transform: scale(1.05); /* Slightly enlarge the box */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styles for read more link inside innerBox */
+.innerBox .readMore:hover {
+  text-decoration: underline; /* Underline text on hover */
+  color: #0d1b2a; /* Change text color on hover */
+}
+
+/* Styles for heading in innerBox */
+.innerBox h5 {
+  font-size: 16px; /* Font size */
+  color: black; /* Text color */
+  padding-bottom: 0px; /* Remove bottom padding */
+}
+
+/* Styles for subheading in innerBox */
+.innerBox h2 {
+  font-size: 24px; /* Font size */
+  color: #0d1b2a; /* Text color */
+}
+
+/* Styles for read more text */
+.innerBox .readMore {
+  font-size: 14px; /* Font size */
+  color: darkorange; /* Text color */
+  text-transform: capitalize; /* Capitalize text */
+  display: inline-block; /* Inline block layout */
+  margin-bottom: 20px; /* Margin below the text */
+  margin-top: 0px; /* No margin on top */
+}
+
+/* Hover effect for read more text */
+.innerBox .readMore:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Styles for icons inside innerBox */
+.innerBox .icon {
+  font-size: 40px; /* Font size */
+  color: darkorange; /* Icon color */
+  position: absolute; /* Absolute positioning */
+  bottom: 15px; /* Position at the bottom */
+  right: 15px; /* Position to the right */
+}
+
+/* Styles for call to action section */
+.callToAction {
+  background-color: #1A1A3B; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Center text horizontally */
+  padding: 0px 100px; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: center; /* Center items vertically */
+  max-width: 900px; /* Maximum width */
+  margin: 30px auto; /* Center horizontally with margin */
+  padding-bottom: 60px; /* Padding at the bottom */
+}
+
+/* Styles for contact us text */
+.contactusText h2 {
+  font-size: 28px; /* Font size */
+  margin-bottom: 5px; /* Margin below the heading */
+}
+
+/* Styles for contact us paragraph */
+.contactusText p {
+  font-size: 16px; /* Font size */
+  margin: 0; /* Remove margin */
+}
+
+/* Styles for contact us button */
+.contactusButton h2 {
+  font-size: 36px; /* Font size */
+  margin: 0; /* Remove margin */
+  margin-bottom: 20px !important; /* Margin below the heading */
+  margin-top: 10px;
+}
+
+/* Styles for contact button */
+.contactButton {
+  background-color: darkorange; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 15px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 7px; /* Rounded corners */
+  margin-left: 80px; /* Margin on the left */
+  margin-top: 10px; /* Margin on top */
+  font-weight: bold; /* Bold text */
+}
+
+/* Responsive design for service blocks on smaller screens */
+@media (max-width: 768px) {
+  .serviceBlockOne {
+    width: 45%; /* Adjust width for medium screens */
+  }
+}
+
+/* Responsive design for service blocks on very small screens */
+@media (max-width: 480px) {
+  .serviceBlockOne {
+    width: 100%; /* Full width on small screens */
+  }
+}

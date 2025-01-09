@@ -1,0 +1,87 @@
+body{
+   background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+.form {
+  max-width: 400px; /* Set maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 15px; /* Add padding inside the form */
+  margin-bottom: 20px; /* Add space below the form */
+}
+
+.responseMessage {
+  margin-bottom: 10px; /* Add space below the response message */
+  text-align: center; /* Center-align the text */
+  color: darkorange; /* Set text color to a shade of darkorange */
+}
+
+.formGroup {
+  margin-bottom: 15px; /* Add space below each form group */
+}
+
+.label {
+  display: block; /* Make the label a block-level element */
+  font-weight: bold; /* Make the label text bold */
+  margin-bottom: 10px; /* Add space below the label */
+}
+
+.input {
+  width: 100%; /* Make the input field take full width of its container */
+  padding: 15px; /* Add padding inside the input field */
+  border: 1px solid #ccc; /* Set a light grey border around the input field */
+  border-radius: 5px; /* Round the corners of the input field */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+.passwordWrapper {
+  position: relative; /* Set relative positioning to position child elements absolutely within this wrapper */
+}
+
+.header {
+  display: flex; /* Use flexbox to layout header contents */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 15px; /* Add space below the header */
+}
+.loginheader{
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.greenLine {
+  width: 1.5cm; /* Set width of the darkorange line */
+  height: 2.5px; /* Set height of the darkorange line */
+  background-color: darkorange; /* Set background color to darkorange */
+  margin-top: 30px; /* Add space above the darkorange line */
+  margin-left: 10px; /* Add space to the left of the darkorange line */
+}
+
+.passwordToggle {
+  position: absolute; /* Position the toggle icon absolutely within the passwordWrapper */
+  top: 60%; /* Position toggle icon vertically in the middle */
+  right: 5px; /* Position toggle icon 5px from the right edge */
+  transform: translateY(-50%); /* Adjust vertical position to center the icon */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 1.7rem; /* Set font size for the toggle icon */
+  color: #555; /* Set color of the toggle icon */
+}
+
+.submitButton {
+  width: 30%; /* Set width of the submit button to 30% of its container */
+  padding: 14px 20px; /* Add padding inside the button */
+  background-color: darkorange; /* Set background color to darkorange */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 7px; /* Round the corners of the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Set font size of the button text */
+}
+
+.submitButton:hover {
+  background-color: darkdarkorange; /* Change background color on hover */
+}

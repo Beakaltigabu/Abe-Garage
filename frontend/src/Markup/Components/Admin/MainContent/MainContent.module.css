@@ -1,0 +1,23 @@
+.mainContent {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+    transition: margin-left 0.3s ease;
+    min-height: calc(100vh - var(--header-height));
+  }
+
+  .mainContent.expanded {
+    margin-left: 0;
+  }
+
+  .mainContent.mobile {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    .mainContent {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }

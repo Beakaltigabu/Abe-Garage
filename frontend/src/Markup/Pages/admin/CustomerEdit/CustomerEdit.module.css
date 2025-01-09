@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.formContainer {
+  flex: 1;
+  padding: 0px 60px;
+ margin-top: -25px;
+ background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.formTitle {
+  font-size: 1.8rem;
+  color: #1a202c;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.formTitle::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: darkorange;
+  bottom: -10px;
+  display: block;
+  margin-left: 280px;
+  margin-top: -10px;
+}
+
+.customerEmail {
+  font-size: 1.5rem;
+  color: dark;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.responseMessage h4 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: darkgreen;
+  font-family: 'Arial', sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: 'Arial', sans-serif;
+}
+
+.lastformGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.inputCheckbox {
+  width: auto;
+  padding: 0;
+  margin-right: 8px;
+  border: none;
+  transform: scale(1.2);
+}
+
+.label {
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: 'Arial', sans-serif;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: darkorange;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
